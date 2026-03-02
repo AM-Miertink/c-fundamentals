@@ -4,15 +4,15 @@
 
 int main()
 {
-    int lado, altura;
+    float lado, altura;
 
     printf("\n\tInsira o valor do LADO (L) do retangulo: ");
-    scanf("%i", &lado);
+    scanf("%f", &lado);
 
     printf("\n\tInsira o valor da ALTURA (H) do retangulo: ");
-    scanf("%i", &altura);
+    scanf("%f", &altura);
 
-    printf("\n\tArea do retangulo: %i", (lado * altura));
+    printf("\n\tArea do retangulo: %f", (lado * altura));
 
     return 0;
 }
