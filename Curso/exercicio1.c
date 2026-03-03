@@ -1,19 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
-    char sexo;
-    int idade;
-    float peso, altura;
+    char genero = 'X';
+    int idade = 0;
+    float peso = 0, altura = 0;
 
-    // Input do usuário, incluindo uma tentativa inicial de tratamento de erro
-    printf("\n\tDigite seu sexo (F ou M), idade, peso e altura, sem virgula: ");
-    printf("\n\tPor exemplo: M 18 70 1.80\n");
-    scanf("%c %i %.2f %.2f", &sexo, &idade, &peso, &altura);
+    // Input do usuário
+    printf("\nDigite seu genero (F/M): ");
+    scanf("%c", &genero);
 
-    // Mostra o resultado para o usuário
-    printf("\n\tSexo: %c \n\tIdade: %i \n\tPeso: %f \n\tAltura: %f", sexo, idade, peso, altura);
+    printf("\nDigite sua idade: ");
+    scanf("%i", &idade);
+
+    printf("\nDigite seu peso em quilos: ");
+    scanf("%f", &peso);
+
+    printf("\nDigite sua altura em metros: ");
+    scanf("%f", &altura);
+
+    // Output para o usuário
+    printf("\nGenero: %c \nIdade: %i anos \nPeso: %.2f kgs \nAltura: %.2fm\n", genero, idade, peso, altura);
 
     return 0;
 }
