@@ -1,3 +1,5 @@
+// Exercício 1: Como ler do teclado sexo, idade, peso e altura do usuário?
+
 #include <stdio.h>
 
 int main()
